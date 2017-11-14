@@ -10,17 +10,17 @@ from django.contrib.flatpages.admin import FlatPageAdmin
 from django.contrib.flatpages.models import FlatPage
 from pagedown.widgets import AdminPagedownWidget
 
-from ckeditor.widgets import CKEditorWidget
 from . import models
 
 
 class FlatpageForm(FlatpageFormOld):
-    content = forms.CharField(widget=CKEditorWidget()) 
+    content = forms.CharField(widget=AdminPagedownWidget())
 
     class Meta:
         # this is not automatically inherited from FlatpageFormOld
         model = FlatPage
         fields = ['id', 'title', 'content']
+
 
 
 class FlatPageAdmin(FlatPageAdminOld):

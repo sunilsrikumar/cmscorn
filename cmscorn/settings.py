@@ -136,29 +136,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 SITE_ID = 1
 
-# ckeditor
-
-CKEDITOR_UPLOAD_PATH = "uploads/"
-
-CKEDITOR_CONFIGS = {
-    'awesome_ckeditor': {
-        'toolbar': 'Basic',
-        'height': 300,
-        'width': 800,
-    },
-}
-
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'Custom',
-        'toolbar_Custom': [
-            ['Bold', 'Italic', 'Underline'],
-            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink'],
-            ['RemoveFormat', 'Source']
-        ]
-    }
-}
 
 # Enable for webfaction production deployment
 """
