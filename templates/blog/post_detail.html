@@ -3,7 +3,7 @@
 {% load markdown_deux_tags %}
 
 {% block content %}
-
+	<div class="container">
 	<article itemscope itemtype="http://schema.org/Article">
 		<header itemprop="name">
 			<a href="{{ post.get_absolute_url }}">
@@ -45,5 +45,5 @@
 {% else %}
 	<p>Comments are disabled for this post.</p>
 {% endif %}
-
+</div>
 {% endblock %}

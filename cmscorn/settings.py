@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites', # django siteframework
     'django.contrib.flatpages', # flatpage app 
-    'ckeditor',
     'pagedown',
     'el_pagination',
     'markdown_deux',

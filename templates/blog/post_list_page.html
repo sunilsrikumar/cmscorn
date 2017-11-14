@@ -6,6 +6,7 @@
 	{% paginate posts %}
 
 	{% for post in posts %}
+		<div class="container">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header itemprop="name">
 				<a href="{{ post.get_absolute_url }}">
@@ -34,6 +35,7 @@
 				<span class="hidden" itemprop="wordCount">{{ post.bodytext|wordcount }}</span>
 			</footer>
 		</article>
+	</div>
 	{% endfor %}
 
 	{% show_more "Load more blog posts" %}
