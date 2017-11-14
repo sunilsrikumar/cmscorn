@@ -20,7 +20,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200, verbose_name=_("title"))
     slug = models.SlugField()
     header_image = models.ImageField(null=True, blank=True)
-    bodytext = RichTextField(verbose_name=_("message"))
+    bodytext = models.TextField(verbose_name=_("message"))
 
     post_date = models.DateTimeField(
         auto_now_add=True, verbose_name=_("post date"))

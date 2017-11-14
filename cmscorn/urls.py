@@ -20,6 +20,7 @@ from django.contrib.flatpages import views
 urlpatterns = [
     url(r'^$', views.flatpage, {'url': '/home/'}, name='home'),
 	url(r'^pages/', include('django.contrib.flatpages.urls')),
+    url(r'^blog/', include('blog.urls')),
 	# url(r'^about/$', views.flatpage, {'url': '/about/'}, name='about'), # enable to have custom url for flatpage
     url(r'^admin/', admin.site.urls),
 ]
