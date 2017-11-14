@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sites', # django siteframework
     'django.contrib.flatpages', # flatpage app 
     'ckeditor',
+    'blog',
 ]
 
 MIDDLEWARE = [
