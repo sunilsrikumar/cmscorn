@@ -1,0 +1,22 @@
+{% load staticfiles %}
+{% load flatpages %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    {% include 'includes/head.html' %}
+  </head>
+  <body>
+
+  	<div class="container">
+  	{% include 'includes/menu.html' %}
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+   
+    {% include 'includes/js.html' %}
+  </body>
+</html>
