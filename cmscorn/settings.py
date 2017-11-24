@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'blog',
     'contact',
+    'registration',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,11 @@ SITE_ID = 1
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = '/'
+
+
