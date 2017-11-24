@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.flatpages import views
 from contact import views as contact_views
+from django.views.generic.base import TemplateView
 
 
 urlpatterns = [
@@ -25,5 +26,7 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
 	# url(r'^about/$', views.flatpage, {'url': '/about/'}, name='about'), # enable to have custom url for flatpage
     url(r'^admin/', admin.site.urls),
+    url(r'^users/', include('registration.urls')),
+    url(r'^users/', include('django.contrib.auth.urls')),
     url(r'^', include('contact.urls')),
 ]
