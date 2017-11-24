@@ -4,29 +4,29 @@ from __future__ import unicode_literals
 from django.contrib import admin
 from django import forms
 from django.db import models as django_models
-from django.contrib.flatpages.admin import FlatPageAdmin as FlatPageAdminOld
-from django.contrib.flatpages.admin import FlatpageForm as FlatpageFormOld
-from django.contrib.flatpages.admin import FlatPageAdmin
-from django.contrib.flatpages.models import FlatPage
+# from django.contrib.flatpages.admin import FlatPageAdmin as FlatPageAdminOld
+# from django.contrib.flatpages.admin import FlatpageForm as FlatpageFormOld
+# from django.contrib.flatpages.admin import FlatPageAdmin
+# from django.contrib.flatpages.models import FlatPage
 from pagedown.widgets import AdminPagedownWidget
 
 from . import models
 
 
-class FlatpageForm(FlatpageFormOld):
-    content = forms.CharField(widget=AdminPagedownWidget())
+# class FlatpageForm(FlatpageFormOld):
+#     content = forms.CharField(widget=AdminPagedownWidget())
 
-    class Meta:
-        # this is not automatically inherited from FlatpageFormOld
-        model = FlatPage
-        fields = ['id', 'title', 'content']
+#     class Meta:
+#         # this is not automatically inherited from FlatpageFormOld
+#         model = FlatPage
+#         fields = ['id', 'title', 'content']
 
 
 
-class FlatPageAdmin(FlatPageAdminOld):
-    form = FlatpageForm
-admin.site.unregister(FlatPage)
-admin.site.register(FlatPage, FlatPageAdmin)
+# class FlatPageAdmin(FlatPageAdminOld):
+#     form = FlatpageForm
+# admin.site.unregister(FlatPage)
+# admin.site.register(FlatPage, FlatPageAdmin)
 
 
 class PostAdmin(admin.ModelAdmin):

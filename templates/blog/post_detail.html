@@ -1,4 +1,5 @@
 {% extends 'includes/base.html' %}
+{% load staticfiles %}
 
 {% load markdown_deux_tags %}
 
@@ -7,7 +8,7 @@
 	<article itemscope itemtype="http://schema.org/Article">
 		<header itemprop="name">
 			<a href="{{ post.get_absolute_url }}">
-				<h1>{{ post.title }}</h1>
+				<h1 class="display-1">{{ post.title }}</h1>
 			</a>
 		</header>
 		
@@ -34,11 +35,11 @@
 	</article>
 
 
-<a name="comments"><h2>Comment</h2></a>
+<a name="comments"><h2 class="display-1">Comment</h2></a>
 {% if post.allow_comments %}
 	{% include 'blog/includes/post_form.html' %}
 	<hr />
-	<h2>Comments</h2>
+	<h2 class="display-1">Comments</h2>
 
 	{% include page_template %}
 

@@ -1,3 +1,4 @@
+{% load staticfiles %}
 {% load el_pagination_tags %}
 
 {% load markdown_deux_tags %}
@@ -10,7 +11,7 @@
 		<article itemscope itemtype="http://schema.org/Article">
 			<header itemprop="name">
 				<a href="{{ post.get_absolute_url }}">
-					<h1>{{ post.title }}</h1>
+					<h1 class="display-1">{{ post.title }}</h1>
 				</a>
 			</header>
 

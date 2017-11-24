@@ -1,4 +1,5 @@
 {% load el_pagination_tags %}
+{% load staticfiles %}
 
 {% if posts %}
 	{% paginate posts %}
@@ -6,7 +7,7 @@
 	{% for post in posts %}
 		<article>
 			<header>
-				<h2>
+				<h2 class="display-2">
 					<a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
 				</h2>
 			</header>

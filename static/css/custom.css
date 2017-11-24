@@ -2,11 +2,37 @@
 /* Global */
 
 body{
+	padding-top: 5rem;
 	font-family: 'Roboto', sans-serif;
+	color: #616161;
 }
 
 .navbar-brand{
 	font-weight: 900;
 	letter-spacing: 2px;
-	color: #343B40;
+	color: #FF3300;
+}
+
+/* Header fonts */
+
+.display-1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.display-2{
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+/* Links */
+
+a {
+    color: #FF3300;
+}
+
+a:hover {
+    color: #FF3300;
+    text-decoration: none;
 }

@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.flatpages import views
+from contact import views as contact_views
+
 
 urlpatterns = [
     url(r'^$', views.flatpage, {'url': '/home/'}, name='home'),
@@ -23,4 +25,5 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
 	# url(r'^about/$', views.flatpage, {'url': '/about/'}, name='about'), # enable to have custom url for flatpage
     url(r'^admin/', admin.site.urls),
+    url(r'^', include('contact.urls')),
 ]

@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'pagedown',
     'el_pagination',
     'markdown_deux',
+    'crispy_forms',
     'blog',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -144,3 +146,9 @@ SITE_ID = 1
 # STATIC_ROOT = '/home/nescode/webapps/static_folder_root/'
 
 # MEDIA_ROOT = '/home/nescode/webapps/media_folder_root/'
+
+# Crispy forms
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
