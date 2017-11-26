@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+import mailchimp
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,6 +27,14 @@ SECRET_KEY = 'cxji+i#8$=yosswru-@@8w!5=#i4v+jwy7rzl5d7hw4^+comr^'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+# SMTP with gmail. Make sure less secure option is enable in gmail settings
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'your-gmail-id'
+EMAIL_HOST_PASSWORD = 'your-gmail-password'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -44,6 +54,8 @@ INSTALLED_APPS = [
     'blog',
     'contact',
     'registration',
+    'newsletter',
+    'mailchimp',
 ]
 
 MIDDLEWARE = [
@@ -161,3 +173,6 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 
+MAILCHIMP_API_KEY           = "your-mailchimp-api-key"
+MAILCHIMP_DATA_CENTER       = 'your-mailchimp-datacenter'
+MAILCHIMP_SUBSCRIBE_LIST_ID = 'your-mailchimp-subscriber-list'

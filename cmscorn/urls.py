@@ -19,8 +19,9 @@ from django.contrib.flatpages import views
 from contact import views as contact_views
 from django.views.generic.base import TemplateView
 
+from newsletter.views import subscribe
 
-urlpatterns = [
+urlpatterns =[
     url(r'^$', views.flatpage, {'url': '/home/'}, name='home'),
 	url(r'^pages/', include('django.contrib.flatpages.urls')),
     url(r'^blog/', include('blog.urls')),
@@ -29,4 +30,5 @@ urlpatterns = [
     url(r'^users/', include('registration.urls')),
     url(r'^users/', include('django.contrib.auth.urls')),
     url(r'^', include('contact.urls')),
+    url(r'^subscribe/', subscribe, name = "subscribe"),
 ]
