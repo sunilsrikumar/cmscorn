@@ -1,10 +1,13 @@
 
 /* Global */
 
-body{
-	padding-top: 5rem;
-	font-family: 'Roboto', sans-serif;
-	color: #616161;
+body {
+  padding-top: 5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #616161;
+  /*background-color: #FAFAFA;*/
+  /*background-image: url("https://s3.amazonaws.com/supaulone/public/cubes.png");*/
+  height: 100%;
 }
 
 .navbar-brand{
@@ -35,4 +38,37 @@ a {
 a:hover {
     color: #FF3300;
     text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #F5F5F5;
+  /*background-image: url("https://s3.amazonaws.com/supaulone/public/cubes.png");*/
+  /*color: #fff;*/
+  padding-top: 4rem;
+  min-height: 200px;
+}
+
+.footercustom{
+    padding-top: 50px;
+}
+
+.copyright{
+  font-size: 14px;
+  /*color: #fff;*/
+  font-weight: 300;
+}
+
+
+/* Social media */
+
+.fa-stack{
+  color: #ff3300;
+}
+
+/* footer social icons */
+.list-inline {
+    padding-left: 0;
+    margin-left: 0px;
 }
