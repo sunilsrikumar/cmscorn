@@ -2,7 +2,7 @@
 /* Global */
 
 body {
-  padding-top: 5rem;
+  padding-top: 4rem;
   font-family: 'Roboto', sans-serif;
   color: #616161;
   /*background-color: #FAFAFA;*/
@@ -44,11 +44,14 @@ a:hover {
 
 .footer {
   background-color: #F5F5F5;
-  /*background-image: url("https://s3.amazonaws.com/supaulone/public/cubes.png");*/
-  /*color: #fff;*/
-  padding-top: 4rem;
+/*  position: absolute;*/
+  bottom: 0;
+  width: 100%;
   min-height: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 
 .footercustom{
     padding-top: 50px;
