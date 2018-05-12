@@ -14,5 +14,5 @@ def subscribe(request):
             return JsonResponse(data)
         else:
             Subscribe.objects.create(email_id = email)
-            SendSubscribeMail(email) # Send the Mail, Class available in utils.py
+            SendSubscribeMail(email) # Send the Mail
     return HttpResponse("/")

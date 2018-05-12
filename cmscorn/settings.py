@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'registration',
     'newsletter',
     'mailchimp',
+    'page',
 ]
 
 MIDDLEWARE = [
