@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'registration',
     'newsletter',
     'mailchimp',
+    'page',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +100,19 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# Postgresql database connection. Configure as per setup.
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'db_name',
+#         'USER': 'db_user',
+#         'PASSWORD': 'db_user_password',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 
 # Password validation
