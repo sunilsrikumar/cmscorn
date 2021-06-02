@@ -10,7 +10,7 @@ django-simple-math-captcha==1.0.7
 docopt==0.4.0
 idna==2.6
 mailchimp==2.0.9
-markdown2==2.3.5
+markdown2==2.4.0
 olefile==0.44
 Pillow==4.3.0
 psycopg2==2.7.4
